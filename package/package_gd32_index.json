@@ -34,7 +34,7 @@
           ],
           "toolsDependencies": [
             {
-              "name": "gd32vw55x_toolchain",
+              "name": "gd32vw553_toolchain",
               "version": "1.0.0",
               "packager": "gd32"
             },
@@ -53,20 +53,20 @@
       ],
       "tools": [
         {
-          "name": "gd32vw55x_toolchain",
+          "name": "gd32vw553_toolchain",
           "version": "1.0.0",
           "systems": [
             {
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32vw553_toolchain_windows.7z",
-              "archiveFileName": "gd32vw55x_toolchain_windows.7z",
+              "archiveFileName": "gd32vw553_toolchain_windows.7z",
               "checksum": "SHA-256:5ad44ae01b916c8e37bac417ec1a00b8bdb8ed5c94c31a605a0dab8025c7ea18",
               "size": "104443760"
             },
             {
               "host": "x86_64-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32vw553_toolchain_windows.7z",
-              "archiveFileName": "gd32vw55x_toolchain_windows.7z",
+              "archiveFileName": "gd32vw553_toolchain_windows.7z",
               "checksum": "SHA-256:5ad44ae01b916c8e37bac417ec1a00b8bdb8ed5c94c31a605a0dab8025c7ea18",
               "size": "104443760"
             }
