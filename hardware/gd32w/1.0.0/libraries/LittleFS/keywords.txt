@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map For LittleFS
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LittleFSFS      KEYWORD1
+File            KEYWORD1
+FS              KEYWORD1
+SeekMode        KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin           KEYWORD2
+end             KEYWORD2
+open            KEYWORD2
+exists          KEYWORD2
+remove          KEYWORD2
+rename          KEYWORD2
+mkdir           KEYWORD2
+rmdir           KEYWORD2
+state           KEYWORD2
+write           KEYWORD2
+read            KEYWORD2
+available       KEYWORD2
+peek            KEYWORD2
+flush           KEYWORD2
+seek            KEYWORD2
+position        KEYWORD2
+size            KEYWORD2
+close           KEYWORD2
+path            KEYWORD2
+name            KEYWORD2
+isDirectory     KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+FILE_READ       LITERAL1
+FILE_WRITE      LITERAL1
+FILE_APPEND     LITERAL1
+SeekSet         LITERAL1
+SeekCur         LITERAL1
+SeekEnd         LITERAL1

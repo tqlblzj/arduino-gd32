@@ -1,0 +1,48 @@
+#######################################
+# Syntax Coloring Map For HttpOTA
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+HttpOTA             KEYWORD1
+HttpOTAState        KEYWORD1
+HttpOTAStatus       KEYWORD1
+HttpOTAErrorCode    KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin                   KEYWORD2
+handleFirmwareUpload    KEYWORD2
+getState                KEYWORD2
+getRunningImageIndex    KEYWORD2
+getNewImageAddress      KEYWORD2
+isUpdating              KEYWORD2
+getLastError            KEYWORD2
+getLastErrorCode        KEYWORD2
+getSystemInfo           KEYWORD2
+getFirmwareInfo         KEYWORD2
+setError                KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+FLASH_SECTOR_SIZE                       LITERAL1
+HTTPOTA_MAX_FIRMWARE_SIZE               LITERAL1
+HTTPOTA_STATUS_IDLE                     LITERAL1
+HTTPOTA_STATUS_UPLOADING                LITERAL1
+HTTPOTA_STATUS_SUCCESS                  LITERAL1
+HTTPOTA_STATUS_ERROR                    LITERAL1
+HTTPOTA_ERROR_NONE                      LITERAL1
+HTTPOTA_ERROR_CONTENT_TOO_LONG          LITERAL1
+HTTPOTA_ERROR_RECEIVED_TOO_LONG         LITERAL1
+HTTPOTA_ERROR_FLASH_ERASE_FAILED        LITERAL1
+HTTPOTA_ERROR_FLASH_WRITE_FAILED        LITERAL1
+HTTPOTA_ERROR_SET_IMAGE_STATUS_FAILED	LITERAL1
+HTTPOTA_ERROR_INVALID_FILE_TYPE         LITERAL1
+HTTPOTA_ERROR_FILE_TOO_LARGE            LITERAL1
+HTTPOTA_ERROR_UNKNOWN                   LITERAL1

@@ -1,0 +1,104 @@
+{
+  "packages": [
+    {
+      "name": "gd32",
+      "maintainer": "GigaDevice Wireless Team",
+      "websiteURL": "",
+      "email": "",
+      "help": {
+        "online": "https://www.gd32mcu.com"
+      },
+      "platforms": [
+        {
+          "name": "gd32",
+          "architecture": "gd32w",
+          "version": "1.0.0",
+          "category": "GD32",
+          "url": "",
+          "archiveFileName": "",
+          "checksum": "",
+          "size": "",
+          "help": {
+            "online": ""
+          },
+          "boards": [
+            {
+              "name": "GD32VW553 EVAL MD1"
+            },
+            {
+              "name": "GD32VW553 START MD1"
+            },
+            {
+              "name": "GD32VW553 START MINI"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "name": "gd32vw55x_toolchain",
+              "version": "1.0.0",
+              "packager": "gd32"
+            },
+            {
+              "name": "gd32w-arduino-libs",
+              "version": "1.0.0",
+              "packager": "gd32"
+            },
+            {
+              "name": "gd32w-upload-tools",
+              "version": "1.0.0",
+              "packager": "gd32"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "gd32vw55x_toolchain",
+          "version": "1.0.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32vw55x_toolchain_windows",
+              "archiveFileName": "gd32vw55x_toolchain_windows.7z",
+              "checksum": "SHA-256:LOCAL",
+              "size": "0"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32vw55x_toolchain_linux",
+              "archiveFileName": "gd32vw55x_toolchain_linux.tar.gz",
+              "checksum": "SHA-256:LOCAL",
+              "size": "0"
+            }
+          ]
+        },
+        {
+          "name": "gd32w-arduino-libs",
+          "version": "1.0.0",
+          "systems": [
+            {
+              "host": "all",
+              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32w-arduino-libs",
+              "archiveFileName": "gd32w-arduino-libs-1.0.0.tar.gz",
+              "checksum": "SHA-256:LOCAL",
+              "size": "0"
+            }
+          ]
+        },
+        {
+          "name": "gd32w-upload-tools",
+          "version": "1.0.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32w-upload-tools/win",
+              "archiveFileName": "gd32w-upload-tools-win.zip",
+              "checksum": "SHA-256:LOCAL",
+              "size": "0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+# https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+
+name=GD32 Wireless
+version=1.0.0
+
+#compile variables
+##compile Include
+compiler.gd.extra_include= "-I{build.source.path}" "-I{build.core.path}/avr" "-I{build.core.path}/gd32" "-I{build.core.path}/gd32/Source" "-I{build.system.path}/{build.series}_firmware/{build.series}_standard_peripheral/Source" "-I{build.system.path}/{build.series}_firmware/{build.series}_standard_peripheral/Include"  "-I{build.system.path}/CMSIS" "-I{build.system.path}/CMSIS/GD/GD32F30x/Include" "-I{build.system.path}/CMSIS/GD/GD32F30x/Source/GCC" "-I{build.system.path}/CMSIS/GD/GD32F30x/Source"
+## compile warning
+compiler.warning_flags=-w
+compiler.warning_flags.none=-w
+compiler.warning_flags.default=
+compiler.warning_flags.more=-Wall
+compiler.warning_flags.all=-Wall -Wextra
+compiler.common_werror_flags=-Werror=return-type
+## compile path/command
+compiler.path={runtime.tools.gd32vw553_toolchain_windows.path}/bin/
+compiler.path.windows={runtime.tools.gd32vw553_toolchain_windows.path}\bin\
+compiler.sdk_path={runtime.tools.gd32w-arduino-libs.path}/{build.mcu}
+compiler.sdk_path.windows={runtime.tools.gd32w-arduino-libs.path}\{build.mcu}
+
+compiler.c.cmd={build.compiler_prefix}-gcc
+compiler.cpp.cmd={build.compiler_prefix}-g++
+compiler.S.cmd={build.compiler_prefix}-gcc
+compiler.c.elf.cmd={build.compiler_prefix}-g++
+compiler.as.cmd={build.compiler_prefix}-as
+compiler.ar.cmd={build.compiler_prefix}-gcc-ar
+compiler.size.cmd={build.compiler_prefix}-size
+compiler.objcopy.cmd={build.compiler_prefix}-objcopy
+compiler.elf2hex.cmd={build.compiler_prefix}-objcopy
+
+##compile flags
+compiler.cpreprocessor.flags="@{compiler.sdk_path}/flags/defines" "-I{build.source.path}" -iprefix "{compiler.sdk_path}/include/" "@{compiler.sdk_path}/flags/includes" "-I{build.core.path}/gd32"
+compiler.c.flags=-MMD -c "@{compiler.sdk_path}/flags/c_flags" {compiler.warning_flags} {build.flags.optimize} {compiler.common_werror_flags}
+compiler.cpp.flags=-MMD -c "@{compiler.sdk_path}/flags/cpp_flags" {compiler.warning_flags} {build.flags.optimize} {compiler.common_werror_flags}
+compiler.S.flags=-MMD -c -x assembler-with-cpp "@{compiler.sdk_path}/flags/S_flags" {compiler.warning_flags} {build.flags.optimize}
+compiler.c.elf.flags="-Wl,--Map={build.path}/{build.project_name}.map" "-L{compiler.sdk_path}/lib" "-L{compiler.sdk_path}/ld"  "@{compiler.sdk_path}/flags/ld_flags" "@{compiler.sdk_path}/flags/ld_scripts"
+compiler.c.elf.libs="@{compiler.sdk_path}/flags/ld_libs"
+compiler.elf2bin.flags=-O binary
+compiler.elf2hex.flags=-O ihex
+
+
+## These can be overridden in platform.local.txt
+compiler.c.extra_flags=
+compiler.c.elf.extra_flags=
+compiler.cpp.extra_flags=
+compiler.cpp.std=gnu++17
+compiler.S.extra_flags={build.startup_file}
+compiler.ar.flags=cr
+compiler.ar.extra_flags=
+compiler.elf2bin.extra_flags=
+compiler.elf2hex.extra_flags=
+compiler.libraries.ldflags=
+
+# These can be overriden in boards.txt
+build.extra_flags=
+build.bootloader_flags=
+build.ldscript=ldscript.ld
+
+## Build information's flag
+build.info.flags=-D{build.series} -D{build.product_line} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DBOARD_NAME="{build.board}"
+
+## Defaults config
+build.xSerial=
+#build.enable_usb=
+#build.usb_speed=
+#build.enable_virtio=
+build.startup_file=
+build.flags.fp=
+build.flags.optimize=-O0
+build.flags.ldspecs=--specs=nano.specs
+build.flash_offset=0
+build.extra_libs=
+
+# compile patterns
+## Compile c files
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} {build.info.flags} {compiler.c.extra_flags} {build.extra_flags} {compiler.cpreprocessor.flags}  {includes} "{source_file}" -o "{object_file}"
+## Compile c++ files
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {build.info.flags} {compiler.cpp.extra_flags} {build.extra_flags} {compiler.cpreprocessor.flags}  {includes} "{source_file}" -o "{object_file}"
+## Compile S files
+recipe.S.o.pattern="{compiler.path}{compiler.S.cmd}" {compiler.S.flags} {build.info.flags} {compiler.S.extra_flags} {build.extra_flags} {compiler.cpreprocessor.flags}  {includes} "{source_file}" -o "{object_file}"
+## Create archives
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compiler.ar.extra_flags} "{archive_file_path}" "{object_file}"
+## Combine gc-sections, archives, and objects
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {compiler.c.elf.flags} {compiler.c.elf.extra_flags} -Wl,--start-group {object_files} {compiler.c.elf.libs} "{archive_file_path}" {build.extra_libs} {compiler.libraries.ldflags} -Wl,--end-group -Wl,-EL -o "{build.path}/{build.project_name}.elf"
+
+## Create output (.bin file)
+recipe.objcopy.bin.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.elf2bin.flags} {compiler.elf2bin.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.bin"
+## Create output (.hex file)
+recipe.objcopy.hex.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.hex"
+
+build.preferred_out_format=bin
+
+## Save binary
+recipe.output.tmp_file={build.project_name}.{build.preferred_out_format}
+recipe.output.save_file={build.project_name}.{build.variant}.{build.preferred_out_format}
+
+## Compute size
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=^(?:\.text|\.data|\.rodata)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
+recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
+
+
+# Uploader tool
+# -------------------
+# Uploader tools
+##serial_upload
+tools.serial_upload.cmd=serial_upload
+tools.serial_upload.cmd.windows=serial_upload.bat
+tools.serial_upload.path={runtime.tools.gd32tools-1.0.0.path}
+tools.serial_upload.upload.params.verbose=-d
+tools.serial_upload.upload.params.quiet=n
+tools.serial_upload.upload.pattern="{path}/{cmd}" {serial.port.file} "{build.path}/{build.project_name}.bin"
+
+##jlink_upload
+tools.jlink_upload.cmd=jlink_upload
+tools.jlink_upload.cmd.windows=jlink_upload.bat
+tools.jlink_upload.path={runtime.tools.gd32tools-1.0.0.path}
+tools.jlink_upload.upload.params.verbose=-d
+tools.jlink_upload.upload.params.quiet=n
+tools.jlink_upload.upload.pattern="{path}/{cmd}" "{build.path}/{build.project_name}.bin"
+
+##gdlink upload
+tools.gdlink_upload.cmd=gdlink_upload
+tools.gdlink_upload.cmd.windows=gdlink_upload.bat
+tools.gdlink_upload.path.windows={runtime.tools.gd32w-upload-tools.path}
+tools.gdlink_upload.upload.params.verbose=-d
+tools.gdlink_upload.upload.params.quiet=n
+tools.openocd.path={runtime.tools.gd32w-upload-tools.path}/OpenOCD_2022.4.6
+tools.gdlink_upload.upload.pattern="{path}/{cmd}" {tools.openocd.path} "{build.path}/{build.project_name}.bin"

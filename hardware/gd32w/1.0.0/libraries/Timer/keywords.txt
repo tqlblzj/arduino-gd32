@@ -1,0 +1,70 @@
+#######################################
+# Syntax Coloring Map Timer
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+HardwareTimer       KEYWORD1
+timerCallback_t     KEYWORD1
+timerPeriod_t       KEYWORD1
+timerhandle_t       KEYWORD1
+callBack_t          KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+# HardwareTimer class methods
+start               KEYWORD2
+stop                KEYWORD2
+refresh             KEYWORD2
+setPrescaler        KEYWORD2
+setCounter          KEYWORD2
+setrRpetitionValue  KEYWORD2
+setPeriodTime       KEYWORD2
+setReloadValue      KEYWORD2
+attachInterrupt     KEYWORD2
+detachInterrupt     KEYWORD2
+periodCallback      KEYWORD2
+captureCallback     KEYWORD2
+setCaptureMode      KEYWORD2
+getCaptureValue     KEYWORD2
+getTimerClkFre      KEYWORD2
+
+# Timer functions
+getTimerDeviceFromPinname   KEYWORD2
+getPWMIndex                 KEYWORD2
+getTimerIndex               KEYWORD2
+timer_clock_enable          KEYWORD2
+timer_clock_disable         KEYWORD2
+Timer_init                  KEYWORD2
+Timer_start                 KEYWORD2
+Timer_stop                  KEYWORD2
+Timer_setPeriodTime         KEYWORD2
+Timer_rfresh                KEYWORD2
+Timer_enableUpdateIT        KEYWORD2
+Timer_disableUpdateIT       KEYWORD2
+Timer_updateHandle          KEYWORD2
+Timer_enableCaptureIT       KEYWORD2
+Timer_disableCaptureIT      KEYWORD2
+Timer_captureHandle         KEYWORD2
+
+# Utility functions
+getTimerClkFrequency        KEYWORD2
+getTimerUpIrq               KEYWORD2
+getTimerCCIrq               KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+# timeFormat enum
+FORMAT_TICK                 LITERAL1
+FORMAT_US                   LITERAL1
+FORMAT_MS                   LITERAL1
+FORMAT_S                    LITERAL1
+FORMAT_HZ                   LITERAL1
+
+# captureMode enum
+RISING_EDGE                 LITERAL1
+FALLING_EDGE                LITERAL1
+BOTH_EDGE                   LITERAL1

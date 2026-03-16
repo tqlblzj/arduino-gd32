@@ -1,0 +1,163 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+
+menu.pnum=Board part number
+menu.upload_method=Upload method
+menu.opt=Optimize
+
+################################################################################################
+# GD32VW553 series
+################################################################################################
+
+# GD32VW553 EVAL Board
+gd32vw553_eval_md1.name=GD32VW553 EVAL MD1
+
+gd32vw553_eval_md1.build.board=GD32VW553_EVAL_MD1
+gd32vw553_eval_md1.build.series=GD32VW553
+gd32vw553_eval_md1.build.arch=riscv32
+gd32vw553_eval_md1.build.mcu=gd32vw553
+gd32vw553_eval_md1.build.core=gd32w
+gd32vw553_eval_md1.build.variant=GD32VW553_EVAL_MD1
+gd32vw553_eval_md1.build.compiler_prefix=riscv-nuclei-elf
+gd32vw553_eval_md1.build.product_line=GD32VW553_CL
+
+# Upload methods for EVAL board
+gd32vw553_eval_md1.menu.upload_method.gdlinkMethod=GDlink (SWD)
+gd32vw553_eval_md1.menu.upload_method.gdlinkMethod.upload.protocol=gdlink
+gd32vw553_eval_md1.menu.upload_method.gdlinkMethod.upload.options=
+gd32vw553_eval_md1.menu.upload_method.gdlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_eval_md1.menu.upload_method.gdlinkMethod.upload.tool=gdlink_upload
+
+gd32vw553_eval_md1.menu.upload_method.serialMethod=gd32flash (Serial)
+gd32vw553_eval_md1.menu.upload_method.serialMethod.upload.protocol=maple_serial
+gd32vw553_eval_md1.menu.upload_method.serialMethod.upload.options=
+gd32vw553_eval_md1.menu.upload_method.serialMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1
+gd32vw553_eval_md1.menu.upload_method.serialMethod.upload.tool=serial_upload
+
+gd32vw553_eval_md1.menu.upload_method.jlinkMethod=Jlink (SWD)
+gd32vw553_eval_md1.menu.upload_method.jlinkMethod.upload.protocol=jlink
+gd32vw553_eval_md1.menu.upload_method.jlinkMethod.upload.options=
+gd32vw553_eval_md1.menu.upload_method.jlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_eval_md1.menu.upload_method.jlinkMethod.upload.tool=jlink_upload
+
+# Upload size for EVAL board
+gd32vw553_eval_md1.upload.maximum_size=4194304
+gd32vw553_eval_md1.upload.maximum_data_size=294400
+
+################################################################################################
+
+# GD32VW553 START Board
+gd32vw553_start_md1.name=GD32VW553 START MD1
+
+gd32vw553_start_md1.build.board=GD32VW553_START_MD1
+gd32vw553_start_md1.build.series=GD32VW553
+gd32vw553_start_md1.build.arch=riscv32
+gd32vw553_start_md1.build.mcu=gd32vw553
+gd32vw553_start_md1.build.core=gd32w
+gd32vw553_start_md1.build.variant=GD32VW553_START_MD1
+gd32vw553_start_md1.build.compiler_prefix=riscv-nuclei-elf
+gd32vw553_start_md1.build.product_line=GD32VW553_CL
+
+# Upload methods for START board
+gd32vw553_start_md1.menu.upload_method.gdlinkMethod=GDlink (SWD)
+gd32vw553_start_md1.menu.upload_method.gdlinkMethod.upload.protocol=gdlink
+gd32vw553_start_md1.menu.upload_method.gdlinkMethod.upload.options=
+gd32vw553_start_md1.menu.upload_method.gdlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_start_md1.menu.upload_method.gdlinkMethod.upload.tool=gdlink_upload
+
+gd32vw553_start_md1.menu.upload_method.serialMethod=gd32flash (Serial)
+gd32vw553_start_md1.menu.upload_method.serialMethod.upload.protocol=maple_serial
+gd32vw553_start_md1.menu.upload_method.serialMethod.upload.options=
+gd32vw553_start_md1.menu.upload_method.serialMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1
+gd32vw553_start_md1.menu.upload_method.serialMethod.upload.tool=serial_upload
+
+gd32vw553_start_md1.menu.upload_method.jlinkMethod=Jlink (SWD)
+gd32vw553_start_md1.menu.upload_method.jlinkMethod.upload.protocol=jlink
+gd32vw553_start_md1.menu.upload_method.jlinkMethod.upload.options=
+gd32vw553_start_md1.menu.upload_method.jlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_start_md1.menu.upload_method.jlinkMethod.upload.tool=jlink_upload
+
+# Upload size for START board
+gd32vw553_start_md1.upload.maximum_size=4194304
+gd32vw553_start_md1.upload.maximum_data_size=294400
+
+################################################################################################
+
+# GD32VW553 MINI Board
+gd32vw553_start_mini.name=GD32VW553 START MINI
+
+gd32vw553_start_mini.build.board=GD32VW553_START_MINI
+gd32vw553_start_mini.build.series=GD32VW553
+gd32vw553_start_mini.build.arch=riscv32
+gd32vw553_start_mini.build.mcu=gd32vw553
+gd32vw553_start_mini.build.core=gd32w
+gd32vw553_start_mini.build.variant=GD32VW553_START_MINI
+gd32vw553_start_mini.build.compiler_prefix=riscv-nuclei-elf
+gd32vw553_start_mini.build.product_line=GD32VW553_CL
+
+# Upload methods for MINI board
+gd32vw553_start_mini.menu.upload_method.gdlinkMethod=GDlink (SWD)
+gd32vw553_start_mini.menu.upload_method.gdlinkMethod.upload.protocol=gdlink
+gd32vw553_start_mini.menu.upload_method.gdlinkMethod.upload.options=
+gd32vw553_start_mini.menu.upload_method.gdlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_start_mini.menu.upload_method.gdlinkMethod.upload.tool=gdlink_upload
+
+gd32vw553_start_mini.menu.upload_method.serialMethod=gd32flash (Serial)
+gd32vw553_start_mini.menu.upload_method.serialMethod.upload.protocol=maple_serial
+gd32vw553_start_mini.menu.upload_method.serialMethod.upload.options=
+gd32vw553_start_mini.menu.upload_method.serialMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1
+gd32vw553_start_mini.menu.upload_method.serialMethod.upload.tool=serial_upload
+
+gd32vw553_start_mini.menu.upload_method.jlinkMethod=Jlink (SWD)
+gd32vw553_start_mini.menu.upload_method.jlinkMethod.upload.protocol=jlink
+gd32vw553_start_mini.menu.upload_method.jlinkMethod.upload.options=
+gd32vw553_start_mini.menu.upload_method.jlinkMethod.build.upload_flags=-DCONFIG_MAPLE_MINI_NO_DISABLE_DEBUG=1 -DSERIAL_USB -DGENERIC_BOOTLOADER
+gd32vw553_start_mini.menu.upload_method.jlinkMethod.upload.tool=jlink_upload
+
+# Upload size for MINI board
+gd32vw553_start_mini.upload.maximum_size=4194304
+gd32vw553_start_mini.upload.maximum_data_size=294400
+
+################################################################################################
+
+# Common optimization options for all boards
+gd32vw553_eval_md1.menu.opt.osstd=Smallest (default)
+gd32vw553_eval_md1.menu.opt.o1std=Fast (-O1)
+gd32vw553_eval_md1.menu.opt.o1std.build.flags.optimize=-O1
+gd32vw553_eval_md1.menu.opt.o1std.build.flags.ldspecs=
+gd32vw553_eval_md1.menu.opt.o2std=Faster (-O2)
+gd32vw553_eval_md1.menu.opt.o2std.build.flags.optimize=-O2
+gd32vw553_eval_md1.menu.opt.o2std.build.flags.ldspecs=
+gd32vw553_eval_md1.menu.opt.o3std=Fastest (-O3)
+gd32vw553_eval_md1.menu.opt.o3std.build.flags.optimize=-O3
+gd32vw553_eval_md1.menu.opt.o3std.build.flags.ldspecs=
+gd32vw553_eval_md1.menu.opt.ogstd=Debug (-g)
+gd32vw553_eval_md1.menu.opt.ogstd.build.flags.optimize=-Og
+gd32vw553_eval_md1.menu.opt.ogstd.build.flags.ldspecs=
+
+gd32vw553_start_md1.menu.opt.osstd=Smallest (default)
+gd32vw553_start_md1.menu.opt.o1std=Fast (-O1)
+gd32vw553_start_md1.menu.opt.o1std.build.flags.optimize=-O1
+gd32vw553_start_md1.menu.opt.o1std.build.flags.ldspecs=
+gd32vw553_start_md1.menu.opt.o2std=Faster (-O2)
+gd32vw553_start_md1.menu.opt.o2std.build.flags.optimize=-O2
+gd32vw553_start_md1.menu.opt.o2std.build.flags.ldspecs=
+gd32vw553_start_md1.menu.opt.o3std=Fastest (-O3)
+gd32vw553_start_md1.menu.opt.o3std.build.flags.optimize=-O3
+gd32vw553_start_md1.menu.opt.o3std.build.flags.ldspecs=
+gd32vw553_start_md1.menu.opt.ogstd=Debug (-g)
+gd32vw553_start_md1.menu.opt.ogstd.build.flags.optimize=-Og
+gd32vw553_start_md1.menu.opt.ogstd.build.flags.ldspecs=
+
+gd32vw553_start_mini.menu.opt.osstd=Smallest (default)
+gd32vw553_start_mini.menu.opt.o1std=Fast (-O1)
+gd32vw553_start_mini.menu.opt.o1std.build.flags.optimize=-O1
+gd32vw553_start_mini.menu.opt.o1std.build.flags.ldspecs=
+gd32vw553_start_mini.menu.opt.o2std=Faster (-O2)
+gd32vw553_start_mini.menu.opt.o2std.build.flags.optimize=-O2
+gd32vw553_start_mini.menu.opt.o2std.build.flags.ldspecs=
+gd32vw553_start_mini.menu.opt.o3std=Fastest (-O3)
+gd32vw553_start_mini.menu.opt.o3std.build.flags.optimize=-O3
+gd32vw553_start_mini.menu.opt.o3std.build.flags.ldspecs=
+gd32vw553_start_mini.menu.opt.ogstd=Debug (-g)
+gd32vw553_start_mini.menu.opt.ogstd.build.flags.optimize=-Og
+gd32vw553_start_mini.menu.opt.ogstd.build.flags.ldspecs=

@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map Analog
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+analog_t            KEYWORD1
+analogReferenceType KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+analogRead              KEYWORD2
+analogWrite             KEYWORD2
+analogReference         KEYWORD2
+analogReadResolution    KEYWORD2
+analogWriteResolution   KEYWORD2
+get_adc_channel         KEYWORD2
+get_adc_index           KEYWORD2
+get_dac_index           KEYWORD2
+adc_clock_enable        KEYWORD2
+set_dac_value           KEYWORD2
+set_pwm_value           KEYWORD2
+get_adc_value           KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ANALOG_DEFAULT  LITERAL1

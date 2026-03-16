@@ -1,0 +1,44 @@
+#######################################
+# Syntax Coloring Map For Wire
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TwoWire     KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin               KEYWORD2
+end                 KEYWORD2
+setClock            KEYWORD2
+beginTransmission   KEYWORD2
+endTransmission     KEYWORD2
+requestFrom         KEYWORD2
+onReceive           KEYWORD2
+onRequest           KEYWORD2
+onAddrMatch         KEYWORD2
+write               KEYWORD2
+read                KEYWORD2
+available           KEYWORD2
+peek                KEYWORD2
+flush               KEYWORD2
+setSCL              KEYWORD2
+setSDA              KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+Wire                KEYWORD2
+Wire1               KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+WIRE_BUFFER_LENGTH  LITERAL1
+MASTER_ADDRESS      LITERAL1

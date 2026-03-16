@@ -1,0 +1,85 @@
+#######################################
+# Syntax Coloring Map For WebServer
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+WebServer           KEYWORD1
+HTTPMethod          KEYWORD1
+HTTPUploadStatus    KEYWORD1
+HTTPRawStatus       KEYWORD1
+HTTPClientStatus    KEYWORD1
+HTTPUpload          KEYWORD1
+HTTPRaw             KEYWORD1
+HTTPAuthMethod      KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin                   KEYWORD2
+handleClient            KEYWORD2
+close                   KEYWORD2
+stop                    KEYWORD2
+on                      KEYWORD2
+onNotFound              KEYWORD2
+addHandler              KEYWORD2
+uri                     KEYWORD2
+method                  KEYWORD2
+client                  KEYWORD2
+send                    KEYWORD2
+sendContent             KEYWORD2
+sendHeader              KEYWORD2
+chunkResponseBegin      KEYWORD2
+chunkWrite              KEYWORD2
+chunkResponseEnd        KEYWORD2
+authenticate            KEYWORD2
+requestAuthentication   KEYWORD2
+addMiddleware           KEYWORD2
+removeMiddleware        KEYWORD2
+arg                     KEYWORD2
+argName                 KEYWORD2
+args                    KEYWORD2
+hasArg                  KEYWORD2
+pathArg                 KEYWORD2
+upload                  KEYWORD2
+raw                     KEYWORD2
+header                  KEYWORD2
+hasHeader               KEYWORD2
+collectHeaders          KEYWORD2
+headers                 KEYWORD2
+headerName              KEYWORD2
+responseCode            KEYWORD2
+responseHeaders         KEYWORD2
+urlDecode               KEYWORD2
+streamFile              KEYWORD2
+setContentLength        KEYWORD2
+version                 KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+HTTP_GET                LITERAL1
+HTTP_POST               LITERAL1
+HTTP_ANY                LITERAL1
+HTTP_PUT                LITERAL1
+HTTP_DELETE             LITERAL1
+HTTP_PATCH              LITERAL1
+HTTP_HEAD               LITERAL1
+HTTP_OPTIONS            LITERAL1
+CONTENT_LENGTH_UNKNOWN  LITERAL1
+CONTENT_LENGTH_NOT_SET  LITERAL1
+UPLOAD_FILE_START       LITERAL1
+UPLOAD_FILE_WRITE       LITERAL1
+UPLOAD_FILE_END         LITERAL1
+UPLOAD_FILE_ABORTED     LITERAL1
+RAW_START               LITERAL1
+RAW_WRITE               LITERAL1
+RAW_END                 LITERAL1
+RAW_ABORTED             LITERAL1
+BASIC_AUTH              LITERAL1
+DIGEST_AUTH             LITERAL1
+OTHER_AUTH              LITERAL1

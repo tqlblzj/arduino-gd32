@@ -1,0 +1,57 @@
+#######################################
+# Syntax Coloring Map RTC
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+HWRTC	KEYWORD1
+UTCTimeStruct           KEYWORD1
+RTCCallback_t           KEYWORD1
+ALARM_OFFSET_FORMAT     KEYWORD1
+INT_MODE                KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+# HWRTC class methods
+setUTCTime          KEYWORD2
+getUTCTime          KEYWORD2
+setSecTime          KEYWORD2
+getSecTime          KEYWORD2
+setAlarmTime        KEYWORD2
+attachInterrupt     KEYWORD2
+detachInterrupt     KEYWORD2
+interruptHandler    KEYWORD2
+
+# Low-level RTC functions
+rtc_hal_init            KEYWORD2
+rtc_setUTCTime          KEYWORD2
+rtc_setSecTime          KEYWORD2
+rtc_getSecTime          KEYWORD2
+rtc_getUTCTime          KEYWORD2
+rtc_setAlarmTime        KEYWORD2
+rtc_attachInterrupt     KEYWORD2
+rtc_detachInterrupt     KEYWORD2
+RTC_Handler             KEYWORD2
+monthLength             KEYWORD2
+mkTimtoStamp            KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+# ALARM_OFFSET_FORMAT enum
+RTC_ALARM_S     LITERAL1
+RTC_ALARM_M     LITERAL1
+RTC_ALARM_H     LITERAL1
+
+# INT_MODE enum
+INT_SECOND_MODE     LITERAL1
+INT_ALARM_MODE      LITERAL1
+
+# Macros
+IsLeapYear          LITERAL1
+YearLength          LITERAL1
+SECONDS_PER_MINUTE  LITERAL1
+SECONDS_PER_HOUR    LITERAL1
+SECONDS_PER_DAY     LITERAL1
