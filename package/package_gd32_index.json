@@ -3,7 +3,7 @@
     {
       "name": "gd32",
       "maintainer": "GigaDevice Wireless Team",
-      "websiteURL": "",
+      "websiteURL": "https://github.com/tqlblzj/arduino-gd32",
       "email": "",
       "help": {
         "online": "https://www.gd32mcu.com"
@@ -58,17 +58,17 @@
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32vw55x_toolchain_windows",
+              "url": "https://github.com/tqlblzj/gd32vw553_toolchain_windows",
               "archiveFileName": "gd32vw55x_toolchain_windows.7z",
-              "checksum": "SHA-256:LOCAL",
-              "size": "0"
+              "checksum": "SHA-256:5ad44ae01b916c8e37bac417ec1a00b8bdb8ed5c94c31a605a0dab8025c7ea18",
+              "size": "104443760"
             },
             {
-              "host": "x86_64-linux-gnu",
-              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32vw55x_toolchain_linux",
-              "archiveFileName": "gd32vw55x_toolchain_linux.tar.gz",
-              "checksum": "SHA-256:LOCAL",
-              "size": "0"
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/tqlblzj/gd32vw553_toolchain_windows",
+              "archiveFileName": "gd32vw55x_toolchain_windows.7z",
+              "checksum": "SHA-256:5ad44ae01b916c8e37bac417ec1a00b8bdb8ed5c94c31a605a0dab8025c7ea18",
+              "size": "104443760"
             }
           ]
         },
@@ -78,10 +78,10 @@
           "systems": [
             {
               "host": "all",
-              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32w-arduino-libs",
-              "archiveFileName": "gd32w-arduino-libs-1.0.0.tar.gz",
-              "checksum": "SHA-256:LOCAL",
-              "size": "0"
+              "url": "https://github.com/tqlblzj/gd32w-arduino-libs",
+              "archiveFileName": "gd32w-arduino-libs.7z",
+              "checksum": "SHA-256:abed5993757fa4a44ce0dc6e01c7e5b4c3b3ba8a9cb3be684db1be01c34984c1",
+              "size": "7417471"
             }
           ]
         },
@@ -91,10 +91,10 @@
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "file:///c:/Users/admin/AppData/Local/Arduino15/packages/gd32/tools/gd32w-upload-tools/win",
-              "archiveFileName": "gd32w-upload-tools-win.zip",
-              "checksum": "SHA-256:LOCAL",
-              "size": "0"
+              "url": "https://github.com/tqlblzj/gd32w-upload-tools",
+              "archiveFileName": "gd32w-upload-tools-win.7z",
+              "checksum": "SHA-256:5bf5aa2aa1f9bf82c9291b7a6fe7ce4569569a8b234ce751cf316de12339ea98",
+              "size": "1619684 "
             }
           ]
         }
