@@ -91,7 +91,7 @@
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools-win.7z",
+              "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools.7z",
               "archiveFileName": "gd32w-upload-tools-win.7z",
               "checksum": "SHA-256:5bf5aa2aa1f9bf82c9291b7a6fe7ce4569569a8b234ce751cf316de12339ea98",
               "size": "1619684"
