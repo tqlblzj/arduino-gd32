@@ -53,7 +53,7 @@
       ],
       "tools": [
         {
-          "name": "gd32vw553_toolchain",
+          "name": "gd32vw553_toolchain_windows",
           "version": "1.0.0",
           "systems": [
             {
@@ -92,7 +92,7 @@
             {
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools.zip",
-              "archiveFileName": "gd32w-upload-tools-win.zip",
+              "archiveFileName": "gd32w-upload-tools.zip",
               "checksum": "SHA-256:370dc7162b33c91fcd8cd102777923e3622a104f817839e69312c4a947de6e81",
               "size": "774"
             }
