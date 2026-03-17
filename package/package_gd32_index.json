@@ -16,8 +16,8 @@
           "category": "GD32",
           "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32-1.0.0.zip",
           "archiveFileName": "gd32-1.0.0.zip",
-          "checksum": "SHA-256:0b272e794fab9a73d868df303af8a800119fc37fd7bf5e32bf333856b3b0cd93",
-          "size": "2444351",
+          "checksum": "SHA-256:7695e8b594f87299e9d807a475c85b17eb07665f116b107bbfce086ce6bbaf8b",
+          "size": "315743169",
           "help": {
             "online": ""
           },
@@ -60,15 +60,15 @@
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32vw553_toolchain_windows.zip",
               "archiveFileName": "gd32vw553_toolchain_windows.zip",
-              "checksum": "SHA-256:0fb6c5df587b189a819a834c088732158a7ad35dce7ddc8cd0e29cf285bfdeef",
-              "size": "1154"
+              "checksum": "SHA-256:21f6795ac2fbdf2360c121960b4fe105fdc70cd4c232c75760612771cdb85a9f",
+              "size": "288468674"
             },
             {
               "host": "x86_64-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32vw553_toolchain_windows.zip",
               "archiveFileName": "gd32vw553_toolchain_windows.zip",
-              "checksum": "SHA-256:0fb6c5df587b189a819a834c088732158a7ad35dce7ddc8cd0e29cf285bfdeef",
-              "size": "1154"
+              "checksum": "SHA-256:21f6795ac2fbdf2360c121960b4fe105fdc70cd4c232c75760612771cdb85a9f",
+              "size": "288468674"
             }
           ]
         },
@@ -80,8 +80,8 @@
               "host": "all",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-arduino-libs.zip",
               "archiveFileName": "gd32w-arduino-libs.zip",
-              "checksum": "SHA-256:28bf95037b4804e5611249c656ffb5241f50351a65fec3f2e3fa5b5e08350bfb",
-              "size": "3970"
+              "checksum": "SHA-256:508a45b5eff5760b5611ac1dd146376f85b3cd374c07b5af86e9a40d0aa3f295",
+              "size": "22485698"
             }
           ]
         },
@@ -93,8 +93,8 @@
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools.zip",
               "archiveFileName": "gd32w-upload-tools.zip",
-              "checksum": "SHA-256:370dc7162b33c91fcd8cd102777923e3622a104f817839e69312c4a947de6e81",
-              "size": "774"
+              "checksum": "SHA-256:332022feddb092525bbc33c30d081aed92da25a451c0291a4955b2b01456b8d6",
+              "size": "2349680"
             }
           ]
         }
