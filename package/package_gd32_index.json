@@ -16,7 +16,7 @@
           "category": "GD32",
           "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32-1.0.0.zip",
           "archiveFileName": "gd32-1.0.0.zip",
-          "checksum": "SHA-256:c331b171b475f6b68814d17a57be5e81add0ad7c23007fd6d44857a094483ecd2",
+          "checksum": "SHA-256:c331b171b475f6b68814d17a57be5e81add0ad7c23007fd6d44857a094483ecd",
           "size": "4436700",
           "help": {
             "online": ""
