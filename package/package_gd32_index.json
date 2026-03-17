@@ -16,8 +16,8 @@
           "category": "GD32",
           "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32-1.0.0.zip",
           "archiveFileName": "gd32-1.0.0.zip",
-          "checksum": "SHA-256:7695e8b594f87299e9d807a475c85b17eb07665f116b107bbfce086ce6bbaf8b",
-          "size": "315743169",
+          "checksum": "SHA-256:0d972f538c6cb69ccafbb53f36eeb04cbd60f936c2cdd64769a5a894023e2fe1",
+          "size": "2439101 ",
           "help": {
             "online": ""
           },
@@ -93,8 +93,8 @@
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools.zip",
               "archiveFileName": "gd32w-upload-tools.zip",
-              "checksum": "SHA-256:1e1d54d5708ab48afa6952d7bc79f8f0acac3f447eb1116f27387c66ba3c28f6",
-              "size": "2350642"
+              "checksum": "SHA-256:9662f1453cc32582e2475e98817022cf47294e552e3daffb642526d96829fc49",
+              "size": "2350324"
             }
           ]
         }
