@@ -61,7 +61,7 @@
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32vw553_toolchain_windows.zip",
               "archiveFileName": "gd32vw553_toolchain_windows.zip",
               "checksum": "SHA-256:0fb6c5df587b189a819a834c088732158a7ad35dce7ddc8cd0e29cf285bfdeef",
-              "size": "104443760"
+              "size": "1154"
             },
             {
               "host": "x86_64-mingw32",
