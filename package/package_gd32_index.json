@@ -80,8 +80,8 @@
               "host": "all",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-arduino-libs.zip",
               "archiveFileName": "gd32w-arduino-libs.zip",
-              "checksum": "SHA-256:508a45b5eff5760b5611ac1dd146376f85b3cd374c07b5af86e9a40d0aa3f295",
-              "size": "22485698"
+              "checksum": "SHA-256:435588df10932e91faa34e521381fd2d1e4a3256b9d2fec1a557679dc457a1d2",
+              "size": "22493514"
             }
           ]
         },
@@ -93,8 +93,8 @@
               "host": "i686-mingw32",
               "url": "https://github.com/tqlblzj/arduino-gd32/releases/download/v1.0.0/gd32w-upload-tools.zip",
               "archiveFileName": "gd32w-upload-tools.zip",
-              "checksum": "SHA-256:332022feddb092525bbc33c30d081aed92da25a451c0291a4955b2b01456b8d6",
-              "size": "2349680"
+              "checksum": "SHA-256:1e1d54d5708ab48afa6952d7bc79f8f0acac3f447eb1116f27387c66ba3c28f6",
+              "size": "2350642"
             }
           ]
         }
