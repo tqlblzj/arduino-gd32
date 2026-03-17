@@ -34,7 +34,7 @@
           ],
           "toolsDependencies": [
             {
-              "name": "gd32vw553_toolchain",
+              "name": "gd32vw553_toolchain_windows",
               "version": "1.0.0",
               "packager": "gd32"
             },
